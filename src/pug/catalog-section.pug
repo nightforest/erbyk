@@ -1,0 +1,94 @@
+section.catalog-section
+    .container.catalog-section__container
+        header.catalog-section__header
+            .title-wrap.catalog-section__title-wrap
+                h2.animation-title
+                    span Каталог обладнання
+
+            button.button.button--outline.catalog-section__filter-button(type="button" data-filter-toggle) Фільтр
+                svg.button__icon(width="25" height="26")
+                    use(xlink:href="img/sprite.svg#filter")
+
+        .catalog-section__inner        
+            aside.catalog-section__sidebar
+                include ./includes/_filter.pug
+
+            article.catalog-section__article
+                ul.catalog-section__list
+                    li.catalog-section__item
+                        article.equipment-card
+                            picture.equipment-card__picture
+                                img.equipment-card__img(src="img/equipment-img.webp" srcset="img/equipment-img@2x.webp 2x" loading="lazy" width="347" height="255" alt="alt")
+
+                            h3.equipment-card__title Дитячі ігрові майданчики
+
+                            a.button.button--outline.equipment-card__button(href="#") Переглянути
+                            
+                    li.catalog-section__item
+                        article.equipment-card
+                            picture.equipment-card__picture
+                                img.equipment-card__img(src="img/equipment-img.webp" srcset="img/equipment-img@2x.webp 2x" loading="lazy" width="347" height="255" alt="alt")
+
+                            h3.equipment-card__title Дитячі ігрові майданчики
+
+                            a.button.button--outline.equipment-card__button(href="#") Переглянути
+                    
+                    li.catalog-section__item
+                        article.equipment-card
+                            picture.equipment-card__picture
+                                img.equipment-card__img(src="img/equipment-img.webp" srcset="img/equipment-img@2x.webp 2x" loading="lazy" width="347" height="255" alt="alt")
+
+                            h3.equipment-card__title Дитячі ігрові майданчики
+
+                            a.button.button--outline.equipment-card__button(href="#") Переглянути
+                            
+                    li.catalog-section__item
+                        article.equipment-card
+                            picture.equipment-card__picture
+                                img.equipment-card__img(src="img/equipment-img.webp" srcset="img/equipment-img@2x.webp 2x" loading="lazy" width="347" height="255" alt="alt")
+
+                            h3.equipment-card__title Дитячі ігрові майданчики
+
+                            a.button.button--outline.equipment-card__button(href="#") Переглянути
+
+                    li.catalog-section__item
+                        article.equipment-card
+                            picture.equipment-card__picture
+                                img.equipment-card__img(src="img/equipment-img.webp" srcset="img/equipment-img@2x.webp 2x" loading="lazy" width="347" height="255" alt="alt")
+
+                            h3.equipment-card__title Дитячі ігрові майданчики
+
+                            a.button.button--outline.equipment-card__button(href="#") Переглянути
+
+                    li.catalog-section__item
+                        article.equipment-card
+                            picture.equipment-card__picture
+                                img.equipment-card__img(src="img/equipment-img.webp" srcset="img/equipment-img@2x.webp 2x" loading="lazy" width="347" height="255" alt="alt")
+
+                            h3.equipment-card__title Дитячі ігрові майданчики
+
+                            a.button.button--outline.equipment-card__button(href="#") Переглянути
+
+                nav.pagination.catalog-section__pagination(aria-label="Page navigation")
+                    ul.pagination__list
+                        li.pagination__item
+                            button.pagination__button(type="button" aria-label="Previous page")
+                                svg.pagination__icon(width="7" height="12")
+                                    use(xlink:href="img/sprite.svg#arrow-left")
+
+                        li.pagination__item.is-active(aria-current="page")
+                            button.pagination__button(type="button") 1
+                        
+                        li.pagination__item
+                            button.pagination__button(type="button") 2
+                        
+                        li.pagination__item
+                            span ...
+                        
+                        li.pagination__item
+                            button.pagination__button(type="button") 10
+
+                        li.pagination__item
+                            button.pagination__button(type="button" aria-label="Next page")
+                                svg.pagination__icon(width="7" height="12")
+                                    use(xlink:href="img/sprite.svg#arrow-right")

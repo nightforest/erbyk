@@ -1,0 +1,66 @@
+section.projects-section
+    .container.projects-section__container
+        header.projects-section__header
+            .title-wrap.projects-section__title-wrap
+                h2.section-title.animation-title
+                    span Наші проекти:
+
+        .swiper.projects-slider.animation-down(data-delay=".2")
+            .swiper-wrapper
+                .swiper-slide.projects-slider__slide
+                    article.project-card
+                        a.project-card__link(href="#")
+                            picture.project-card__picture
+                                img.project-card__img(src="img/projects/project-img-1.webp" srcset="img/projects/project-img-1@2x.webp 2x" loading="lazy" width="1095" height="640" alt="alt")
+
+                            .project-card__bottom
+                                h3.project-card__title Житловий комплекс “Скандія”
+
+                                svg.project-card__arrow(width="30" height="30")
+                                    use(xlink:href="img/sprite.svg#link-arrow")
+                
+                .swiper-slide.projects-slider__slide
+                    article.project-card
+                        a.project-card__link(href="#")
+                            picture.project-card__picture
+                                img.project-card__img(src="img/projects/project-img-2.webp" srcset="img/projects/project-img-2@2x.webp 2x" loading="lazy" width="1095" height="640" alt="alt")
+
+                            .project-card__bottom
+                                h3.project-card__title Котеджні містечка
+
+                                svg.project-card__arrow(width="30" height="30")
+                                    use(xlink:href="img/sprite.svg#link-arrow")
+
+                .swiper-slide.projects-slider__slide
+                    article.project-card
+                        a.project-card__link(href="#")
+                            picture.project-card__picture
+                                img.project-card__img(src="img/projects/project-img-1.webp" srcset="img/projects/project-img-1@2x.webp 2x" loading="lazy" width="1095" height="640" alt="alt")
+
+                            .project-card__bottom
+                                h3.project-card__title Житловий комплекс “Скандія”
+
+                                svg.project-card__arrow(width="30" height="30")
+                                    use(xlink:href="img/sprite.svg#link-arrow")
+                
+                .swiper-slide.projects-slider__slide
+                    article.project-card
+                        a.project-card__link(href="#")
+                            picture.project-card__picture
+                                img.project-card__img(src="img/projects/project-img-2.webp" srcset="img/projects/project-img-2@2x.webp 2x" loading="lazy" width="1095" height="640" alt="alt")
+
+                            .project-card__bottom
+                                h3.project-card__title Котеджні містечка
+
+                                svg.project-card__arrow(width="30" height="30")
+                                    use(xlink:href="img/sprite.svg#link-arrow")
+
+            button.button.button--green-dark.projects-slider__prev(type="button" aria-label="previous slide")
+                svg.button__icon(width="31" height="31")
+                    use(xlink:href="img/sprite.svg#arrow-prev")
+
+            button.button.button--green-dark.projects-slider__next(type="button" aria-label="next slide")
+                svg.button__icon(width="31" height="31")
+                    use(xlink:href="img/sprite.svg#arrow-next")
+
+            .swiper-scrollbar.projects-slider__scrollbar

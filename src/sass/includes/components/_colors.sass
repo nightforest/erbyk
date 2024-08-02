@@ -1,0 +1,82 @@
+.colors
+
+    &__list
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        gap: 20px
+        margin: 0
+        padding: 0
+        list-style: none
+    
+    &__label
+        position: relative
+        display: flex
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        background: var(--color, --grey)
+        cursor: pointer
+        transition: opacity .5s ease, transform .5s ease
+
+        &::before
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            border-radius: 50%
+            border: 1px solid var(--color, --grey)
+            opacity: 0
+            transform: scale(0)
+            transition: opacity .5s ease, transform .5s ease
+            content: ""
+
+    &__input
+        position: absolute
+        opacity: 0
+        z-index: -1
+
+        // Checked
+        &:checked + .colors__label::before
+            opacity: 1
+            transform: scale(1.35)
+
+        // Not Checked
+        &:not(:checked) + .colors__label::before
+            opacity: 0
+            transform: scale(0)
+
+        // Hover
+        &:not(:disabled):not(:checked) + .colors__label:hover
+            opacity: .5
+
+        // Active 
+        &:not(:disabled):active + .colors__label
+            opacity: 1
+            transform: scale(.8)
+
+        // Focus 
+        &:focus-visible + .colors__label::before
+            opacity: 1
+            transform: scale(1.35)
+
+        &:focus-visible:not(:checked) + .colors__label::before
+            opacity: 1
+            transform: scale(1.35)
+        
+        // Disabled
+        &:disabled
+
+            &:not(:checked) + .colors__label::before
+                box-shadow: none
+                border-color: var(--grey-disabled)
+
+            &:checked + .colors__label
+                &::before
+                    box-shadow: none
+                    border-color: var(--grey-disabled)
+                    background: var(--grey-disabled)
+
+            + .colors__label
+                color: var(--grey-disabled)

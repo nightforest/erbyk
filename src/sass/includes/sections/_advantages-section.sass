@@ -1,0 +1,39 @@
+.advantages-section
+    position: relative
+    padding: 60px 0
+    z-index: 1
+
+    @media ($max-lg)
+        padding: 40px 0
+
+    &__header
+        text-align: center
+        margin-bottom: 80px
+
+        @media ($max-lg)
+            margin-bottom: 48px
+
+    &__list
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        gap: 75px 20px
+        margin: 0
+        padding: 0
+        list-style: none
+
+        @media ($max-md)
+            gap: 56px 20px
+    
+    &__item
+        grid-column: 6 span
+
+        &--sm
+            grid-column: 4 span
+
+            @media ($max-md)
+                grid-column: 6 span
+        
+        &:last-child
+
+            @media ($max-md)
+                grid-column: 12 span

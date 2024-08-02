@@ -1,0 +1,42 @@
+.about-section
+    padding: 70px 0
+    background: #F8F7F7
+    border-radius: 30px
+    border-bottom: 1px solid var(--black)
+
+    @media ($max-md)
+        padding: 40px 0
+
+    &__inner
+        padding: 30px
+        border-radius: 30px
+        background: var(--green-dark)
+        color: var(--white)
+        font-size: 18px
+        font-weight: 300
+        margin-bottom: 50px
+
+        @media ($max-md)
+            padding: 30px 20px
+            font-size: 16px
+
+        h2
+            margin-bottom: 16px
+            font-size: 27px
+            font-weight: 700
+            text-transform: uppercase
+
+    &__row
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 50px
+
+        @media ($max-md)
+            display: flex
+            flex-direction: column
+
+    &__subtitle
+        margin-bottom: 16px
+        font-size: 24px
+        font-weight: 700
+        text-transform: uppercase

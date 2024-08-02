@@ -1,0 +1,93 @@
+.button
+    position: relative
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    gap: 10px
+    text-align: center
+    width: auto
+    height: 54px
+    margin: 0
+    border: none
+    padding: 5px 20px
+    box-sizing: border-box
+    -webkit-tap-highlight-color: transparent
+    outline: none
+    cursor: pointer
+    user-select: none
+    vertical-align: middle
+    appearance: none
+    text-decoration: none
+    text-transform: none
+    font-weight: 500
+    font-size: 18px
+    line-height: 1.2
+    letter-spacing: 0
+    border-radius: 15px
+    background: var(--green-light)
+    color: var(--green-dark)
+    box-shadow: none
+    transition: background .5s ease, color .5s ease
+    overflow: hidden
+    z-index: 1
+
+    &:after
+        content: ''
+        background: var(--green)
+        position: absolute
+        top: 0
+        left: 0
+        width: 101%
+        height: 100%
+        transform: scaleX(0)
+        transform-origin: center center
+        transition: opacity .5s ease, transform .5s ease
+        z-index: -1
+
+    &:hover,
+    &:active,
+    &:focus-visible
+        outline: none
+        color: var(--white)
+
+        &:after
+            transform: scale(1)
+
+    &:disabled
+        background: var(--grey-light) !important
+        border-color: var(--grey-light) !important
+        color: var(--grey) !important
+        cursor: not-allowed
+
+    &--circle
+        padding: 10px
+        width: 260px
+        height: 260px
+        border-radius: 50%
+        font-size: 20px
+        font-weight: 500
+
+        @media ($max-xl)
+            width: 180px
+            height: 180px
+            font-size: 14px
+
+        @media ($max-md)
+            width: 150px
+            height: 150px
+    
+    &--green-dark
+        background: var(--green-dark)
+        color: var(--white)
+
+    &--outline
+        border: 1px solid var(--black)
+        background: none
+        color: var(--black)
+        border-radius: 100px
+        
+        &:hover,
+        &:active,
+        &:focus-visible
+            background: none
+            color: var(--white)

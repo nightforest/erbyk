@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <!--base(href="/")-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+        <!-- Title -->
+        <title>Catalog Page</title>
+        <!-- SEO Meta -->
+        <meta name="description" content="Description">
+        <meta name="keywords" content="keyword">
+        <!-- Favicon -->
+        <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+      <script type="module" crossorigin src="/assets/main-547870cc.js"></script>
+      <link rel="stylesheet" href="/assets/main-a817301a.css">
+    </head>
+    <body>
+        <!-- Preloader -->
+        
+<div class="preloader"><img class="preloader__img" src="img/logo.svg" width="120" height="120" alt="logo"/></div>
+
+        <!-- Header -->
+        
+<header class="header">
+  <div class="container header__container">
+    <div class="logo header__logo"><a class="logo__link" href="#" aria-label="logo"><img class="logo__img" src="img/logo.svg" width="85" height="85" alt="logo"/></a></div>
+    <nav class="menu header__menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a class="menu__link" href="#">Обладнання</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Переваги</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Проєкти</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Контакти</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">FAQ</a></li>
+      </ul>
+    </nav>
+    <div class="lang header__lang">
+      <button class="lang__toggle" type="button" aria-label="Choose a language" data-toggle="lang-list" aria-expanded="false">
+        <svg class="lang__toggle-icon" width="32" height="33">
+          <use xlink:href="img/sprite.svg#lang"></use>
+        </svg>
+      </button>
+      <ul class="lang__list" id="lang-list" aria-hidden="true">
+        <li class="lang__item"><a class="lang__link" href="#">EN</a></li>
+        <li class="lang__item"><a class="lang__link" href="#">DE</a></li>
+      </ul>
+    </div>
+    <div class="dropdown header__dropdown">
+      <button class="dropdown__toggle" type="button" data-toggle="dropdown-list" aria-expanded="false"><span>Наші Бізнеси</span>
+        <svg class="dropdown__toggle-icon" width="17" height="9">
+          <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+        </svg>
+      </button>
+      <ul class="dropdown__list" id="dropdown-list" aria-hidden="true">
+        <li class="dropdown__item"><a class="dropdown__link" href="https://wstec.co.uk/" target="_blank">Світ спортивних технологій</a></li>
+        <li class="dropdown__item"><a class="dropdown__link" href="https://www.thehub.com.ua" target="_blank">Рекрутингова агенція The HUB</a></li>
+      </ul>
+    </div><a class="button header__catalog-button" href="#">
+      <svg class="button__icon" width="28" height="25">
+        <use xlink:href="img/sprite.svg#catalog"></use>
+      </svg><span>Каталог</span></a>
+    <button class="burger header__nav-toggle" type="button" aria-expanded="false" data-nav-toggle="data-nav-toggle"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></button>
+  </div>
+</header>
+
+        <!-- Main -->
+        <main id="main" class="main">
+            
+<section class="catalog-section">
+  <div class="container catalog-section__container">
+    <header class="catalog-section__header">
+      <div class="title-wrap catalog-section__title-wrap">
+        <h2 class="animation-title"><span>Каталог обладнання</span></h2>
+      </div>
+      <button class="button button--outline catalog-section__filter-button" type="button" data-filter-toggle="data-filter-toggle">Фільтр
+        <svg class="button__icon" width="25" height="26">
+          <use xlink:href="img/sprite.svg#filter"></use>
+        </svg>
+      </button>
+    </header>
+    <div class="catalog-section__inner">       
+      <aside class="catalog-section__sidebar">
+        <div class="filter">
+          <div class="filter__sidebar">
+            <div class="filter__header">
+              <h2 class="filter__title">Фільтр</h2>
+              <svg class="filter__icon" width="22" height="20">
+                <use xlink:href="img/sprite.svg#filter"></use>
+              </svg>
+              <button class="filter__close" type="button" aria-label="Close filter" data-filter-close="data-filter-close">
+                <svg class="filter__close-icon" width="19" height="19">
+                  <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="filter__inner">
+              <div class="filter-block">
+                <button class="filter-block__toggle" type="button" data-trigger="filter-block-1" aria-expanded="true">Категорії Обладнання
+                  <svg class="filter-block__toggle-icon" width="22" height="12">
+                    <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+                  </svg>
+                </button>
+                <div class="filter-block__body" id="filter-block-1" aria-hidden="false">
+                  <div class="filter-block__inner">
+                    <ul class="filter-block__list">
+                      <li class="filter-block__item">
+                        <div class="checkbox filter-block__checkbox">
+                          <input class="checkbox__input" id="filterCheckbox-1" type="checkbox" name="filterCheckbox-1" value="true" checked="checked"/>
+                          <label class="checkbox__label" for="filterCheckbox-1">Категорії</label>
+                        </div>
+                      </li>
+                      <li class="filter-block__item">
+                        <div class="checkbox filter-block__checkbox">
+                          <input class="checkbox__input" id="filterCheckbox-2" type="checkbox" name="filterCheckbox-2" value="true"/>
+                          <label class="checkbox__label" for="filterCheckbox-2">Категорії</label>
+                        </div>
+                      </li>
+                      <li class="filter-block__item">
+                        <div class="checkbox filter-block__checkbox">
+                          <input class="checkbox__input" id="filterCheckbox-3" type="checkbox" name="filterCheckbox-3" value="true"/>
+                          <label class="checkbox__label" for="filterCheckbox-3">Категорії</label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-block">
+                <button class="filter-block__toggle" type="button" data-trigger="filter-block-2" aria-expanded="true">Колекція
+                  <svg class="filter-block__toggle-icon" width="22" height="12">
+                    <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+                  </svg>
+                </button>
+                <div class="filter-block__body" id="filter-block-2" aria-hidden="false">
+                  <div class="filter-block__inner">
+                    <ul class="filter-block__list">
+                      <li class="filter-block__item">
+                        <div class="checkbox filter-block__checkbox">
+                          <input class="checkbox__input" id="filterCheckbox-21" type="checkbox" name="filterCheckbox-21" value="true" checked="checked"/>
+                          <label class="checkbox__label" for="filterCheckbox-21">Категорії</label>
+                        </div>
+                      </li>
+                      <li class="filter-block__item">
+                        <div class="checkbox filter-block__checkbox">
+                          <input class="checkbox__input" id="filterCheckbox-22" type="checkbox" name="filterCheckbox-22" value="true"/>
+                          <label class="checkbox__label" for="filterCheckbox-22">Категорії</label>
+                        </div>
+                      </li>
+                      <li class="filter-block__item">
+                        <div class="checkbox filter-block__checkbox">
+                          <input class="checkbox__input" id="filterCheckbox-23" type="checkbox" name="filterCheckbox-23" value="true"/>
+                          <label class="checkbox__label" for="filterCheckbox-23">Категорії</label>
+                        </div>
+                      </li>
+                      <li class="filter-block__item">
+                        <div class="checkbox filter-block__checkbox">
+                          <input class="checkbox__input" id="filterCheckbox-24" type="checkbox" name="filterCheckbox-24" value="true" checked="checked"/>
+                          <label class="checkbox__label" for="filterCheckbox-24">Категорії</label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-block">
+                <button class="filter-block__toggle" type="button" data-trigger="filter-block-3" aria-expanded="true">Вік
+                  <svg class="filter-block__toggle-icon" width="22" height="12">
+                    <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+                  </svg>
+                </button>
+                <div class="filter-block__body" id="filter-block-3" aria-hidden="false">
+                  <div class="filter-block__inner">
+                    <ul class="filter-block__list">
+                      <li class="filter-block__item">
+                        <div class="checkbox filter-block__checkbox">
+                          <input class="checkbox__input" id="filterCheckbox-31" type="checkbox" name="filterCheckbox-31" value="true" checked="checked"/>
+                          <label class="checkbox__label" for="filterCheckbox-31">До 3-ох</label>
+                        </div>
+                      </li>
+                      <li class="filter-block__item">
+                        <div class="checkbox filter-block__checkbox">
+                          <input class="checkbox__input" id="filterCheckbox-32" type="checkbox" name="filterCheckbox-32" value="true"/>
+                          <label class="checkbox__label" for="filterCheckbox-32">Від 3-ох до 10</label>
+                        </div>
+                      </li>
+                      <li class="filter-block__item">
+                        <div class="checkbox filter-block__checkbox">
+                          <input class="checkbox__input" id="filterCheckbox-33" type="checkbox" name="filterCheckbox-33" value="true"/>
+                          <label class="checkbox__label" for="filterCheckbox-33">Від 10 до 17</label>
+                        </div>
+                      </li>
+                      <li class="filter-block__item">
+                        <div class="checkbox filter-block__checkbox">
+                          <input class="checkbox__input" id="filterCheckbox-34" type="checkbox" name="filterCheckbox-34" value="true"/>
+                          <label class="checkbox__label" for="filterCheckbox-34">17+</label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-block">
+                <button class="filter-block__toggle" type="button" data-trigger="filter-block-4" aria-expanded="false">Призначення
+                  <svg class="filter-block__toggle-icon" width="22" height="12">
+                    <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+                  </svg>
+                </button>
+                <div class="filter-block__body" id="filter-block-4" aria-hidden="true">
+                  <div class="filter-block__inner">
+                    <ul class="filter-block__list">
+                      <li class="filter-block__item">
+                        <div class="checkbox filter-block__checkbox">
+                          <input class="checkbox__input" id="filterCheckbox-41" type="checkbox" name="filterCheckbox-41" value="true" checked="checked"/>
+                          <label class="checkbox__label" for="filterCheckbox-41">Категорії</label>
+                        </div>
+                      </li>
+                      <li class="filter-block__item">
+                        <div class="checkbox filter-block__checkbox">
+                          <input class="checkbox__input" id="filterCheckbox-42" type="checkbox" name="filterCheckbox-42" value="true"/>
+                          <label class="checkbox__label" for="filterCheckbox-42">Категорії</label>
+                        </div>
+                      </li>
+                      <li class="filter-block__item">
+                        <div class="checkbox filter-block__checkbox">
+                          <input class="checkbox__input" id="filterCheckbox-43" type="checkbox" name="filterCheckbox-43" value="true"/>
+                          <label class="checkbox__label" for="filterCheckbox-43">Категорії</label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="filter__buttons-group">
+                <button class="button button--green-dark filter__button" type="button">Застосувати</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <article class="catalog-section__article">
+        <ul class="catalog-section__list">
+          <li class="catalog-section__item">
+            <article class="equipment-card">
+              <picture class="equipment-card__picture"><img class="equipment-card__img" src="img/equipment-img.webp" srcset="img/equipment-img@2x.webp 2x" loading="lazy" width="347" height="255" alt="alt"/></picture>
+              <h3 class="equipment-card__title">Дитячі ігрові майданчики</h3><a class="button button--outline equipment-card__button" href="#">Переглянути</a>
+            </article>
+          </li>
+          <li class="catalog-section__item">
+            <article class="equipment-card">
+              <picture class="equipment-card__picture"><img class="equipment-card__img" src="img/equipment-img.webp" srcset="img/equipment-img@2x.webp 2x" loading="lazy" width="347" height="255" alt="alt"/></picture>
+              <h3 class="equipment-card__title">Дитячі ігрові майданчики</h3><a class="button button--outline equipment-card__button" href="#">Переглянути</a>
+            </article>
+          </li>
+          <li class="catalog-section__item">
+            <article class="equipment-card">
+              <picture class="equipment-card__picture"><img class="equipment-card__img" src="img/equipment-img.webp" srcset="img/equipment-img@2x.webp 2x" loading="lazy" width="347" height="255" alt="alt"/></picture>
+              <h3 class="equipment-card__title">Дитячі ігрові майданчики</h3><a class="button button--outline equipment-card__button" href="#">Переглянути</a>
+            </article>
+          </li>
+          <li class="catalog-section__item">
+            <article class="equipment-card">
+              <picture class="equipment-card__picture"><img class="equipment-card__img" src="img/equipment-img.webp" srcset="img/equipment-img@2x.webp 2x" loading="lazy" width="347" height="255" alt="alt"/></picture>
+              <h3 class="equipment-card__title">Дитячі ігрові майданчики</h3><a class="button button--outline equipment-card__button" href="#">Переглянути</a>
+            </article>
+          </li>
+          <li class="catalog-section__item">
+            <article class="equipment-card">
+              <picture class="equipment-card__picture"><img class="equipment-card__img" src="img/equipment-img.webp" srcset="img/equipment-img@2x.webp 2x" loading="lazy" width="347" height="255" alt="alt"/></picture>
+              <h3 class="equipment-card__title">Дитячі ігрові майданчики</h3><a class="button button--outline equipment-card__button" href="#">Переглянути</a>
+            </article>
+          </li>
+          <li class="catalog-section__item">
+            <article class="equipment-card">
+              <picture class="equipment-card__picture"><img class="equipment-card__img" src="img/equipment-img.webp" srcset="img/equipment-img@2x.webp 2x" loading="lazy" width="347" height="255" alt="alt"/></picture>
+              <h3 class="equipment-card__title">Дитячі ігрові майданчики</h3><a class="button button--outline equipment-card__button" href="#">Переглянути</a>
+            </article>
+          </li>
+        </ul>
+        <nav class="pagination catalog-section__pagination" aria-label="Page navigation">
+          <ul class="pagination__list">
+            <li class="pagination__item">
+              <button class="pagination__button" type="button" aria-label="Previous page">
+                <svg class="pagination__icon" width="7" height="12">
+                  <use xlink:href="img/sprite.svg#arrow-left"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="pagination__item is-active" aria-current="page">
+              <button class="pagination__button" type="button">1</button>
+            </li>
+            <li class="pagination__item">
+              <button class="pagination__button" type="button">2</button>
+            </li>
+            <li class="pagination__item"><span>...</span></li>
+            <li class="pagination__item">
+              <button class="pagination__button" type="button">10</button>
+            </li>
+            <li class="pagination__item">
+              <button class="pagination__button" type="button" aria-label="Next page">
+                <svg class="pagination__icon" width="7" height="12">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </article>
+    </div>
+  </div>
+</section>
+        </main>
+
+        <!-- Footer -->
+        
+<footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__row">
+      <div class="logo footer__logo"><a class="logo__link" href="#" aria-label="logo"><img class="logo__img" src="img/logo.svg" width="85" height="85" alt="logo"/></a></div>
+      <nav class="footer-menu">
+        <ul class="footer-menu__list">
+          <li class="footer-menu__item"><a class="footer-menu__link is-active" href="#">Про нас</a></li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Обладнання</a></li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Переваги</a></li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Проєкти</a></li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Контакти</a></li>
+          <li class="footer-menu__item"><a class="footer-menu__link" href="#">FAQ</a></li>
+          <li class="footer-menu__item">
+            <ul class="links-list">
+              <li class="links-list__item"><a class="links-list__link links-list__link--instagram" href="#"> 
+                  <svg class="links-list__icon" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg></a></li>
+              <li class="links-list__item"><a class="links-list__link links-list__link--facebook" href="#"> 
+                  <svg class="links-list__icon" width="12" height="23">
+                    <use xlink:href="img/sprite.svg#facebook"></use>
+                  </svg></a></li>
+              <li class="links-list__item"><a class="links-list__link links-list__link--youtube" href="#"> 
+                  <svg class="links-list__icon" width="27" height="17">
+                    <use xlink:href="img/sprite.svg#youtube"></use>
+                  </svg></a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer__row footer__row--ai-top">
+      <address class="contacts footer__contacts">
+        <h3 class="contacts__title">Номер телефону:</h3>
+        <ul class="contacts__list">
+          <li class="contacts__item"><a class="contacts__link" href="tel:+380986540399">+380986540399</a></li>
+          <li class="contacts__item"><a class="contacts__link" href="tel:+380675494929">+380675494929</a></li>
+        </ul>
+      </address>
+      <address class="contacts footer__contacts">
+        <h3 class="contacts__title">Email:</h3>
+        <ul class="contacts__list">
+          <li class="contacts__item"><a class="contacts__link" href="mailto:we@lorem.com">we@lorem.com</a></li>
+        </ul>
+      </address>
+      <address class="contacts footer__contacts">
+        <h3 class="contacts__title">Адреса:</h3>
+        <ul class="contacts__list">
+          <li class="contacts__item"><a class="contacts__link" href="#" data-modal="modal-map">м. Київ, вул. Грушевського 1</a></li>
+        </ul>
+      </address>
+    </div>
+    <div class="footer__row"><a class="footer__link" href="#">Політика конфіденційності</a>
+      <div class="footer__copyright">&copy; 2024</div>
+      <ul class="certification-list footer__certification-list">
+        <li class="certification-list__item">
+          <picture class="certification-list__picture"><img class="certification-list__img" src="img/iso.webp" srcset="img/iso@2x.webp 2x" loading="lazy" width="91" height="85" alt="alt"/></picture>
+        </li>
+        <li class="certification-list__item">
+          <picture class="certification-list__picture"><img class="certification-list__img" src="img/iaf.webp" srcset="img/iaf@2x.webp 2x" loading="lazy" width="135" height="84" alt="alt"/></picture>
+        </li>
+      </ul><a class="footer__link" href="#">Умови використання </a>
+    </div>
+  </div>
+</footer>
+
+        <!-- Mobile Nav -->
+        
+<div class="mobile-nav">
+  <div class="mobile-nav__sidebar">
+    <div class="mobile-nav__inner">
+      <nav class="mobile-nav-menu">
+        <ul class="mobile-nav-menu__list">
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Обладнання
+              <svg class="mobile-nav-menu__icon" width="15" height="16">
+                <use xlink:href="img/sprite.svg#link-arrow-sm"></use>
+              </svg></a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Переваги
+              <svg class="mobile-nav-menu__icon" width="15" height="16">
+                <use xlink:href="img/sprite.svg#link-arrow-sm"></use>
+              </svg></a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Проєкти
+              <svg class="mobile-nav-menu__icon" width="15" height="16">
+                <use xlink:href="img/sprite.svg#link-arrow-sm"></use>
+              </svg></a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Контакти
+              <svg class="mobile-nav-menu__icon" width="15" height="16">
+                <use xlink:href="img/sprite.svg#link-arrow-sm"></use>
+              </svg></a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">FAQ
+              <svg class="mobile-nav-menu__icon" width="15" height="16">
+                <use xlink:href="img/sprite.svg#link-arrow-sm"></use>
+              </svg></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+        <!-- Modals -->
+        
+<div class="modal-wrap">
+  <div class="modal" id="modal-map">
+    <div class="modal__inner">
+      <div class="modal__window">
+        <button class="modal__close" aria-label="Close modal" data-modal-close="data-modal-close" type="button">
+          <svg class="modal__close-icon" width="20" height="20">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal__content"><iframe class="modal__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.444067919577!2d30.526621076756474!3d50.45145497159236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce51fc128a4d%3A0xf2d83fcd996029c2!2sMykhaila%20Hrushevskoho%20St%2C%201%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sen!2ses!4v1722603740125!5m2!1sen!2ses" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+            
+    </body>
+</html>

@@ -1,0 +1,106 @@
+.equipment-item
+    position: absolute
+    z-index: 1
+    display: flex
+    align-items: center
+    gap: 6px
+    font-size: 13px
+    font-weight: 600
+    width: 290px
+    height: 80px
+    border-radius: 100px
+    padding: 10px
+    background: rgba(255,255,255,0.2)
+    backdrop-filter: blur(10px)
+    color: var(--white)
+
+    @media ($max-lg)
+        position: relative
+
+    @media ($max-sm)
+        width: 100%
+
+    &:before
+        position: absolute
+        top: 100%
+        left: 40px
+        display: flex
+        width: 3px
+        height: 30px
+        background: rgba(255,255,255,0.2)
+        backdrop-filter: blur(10px)
+        content: ""
+
+        @media ($max-lg)
+            display: none
+    
+    &:after
+        position: absolute
+        bottom: -41px
+        left: 38px
+        display: flex
+        width: 8px
+        height: 8px
+        box-shadow: 0 0 0 3px rgba(255,255,255,0.4)
+        backdrop-filter: blur(10px)
+        background: var(--green-light)
+        border-radius: 50%
+        content: ""
+
+        @media ($max-lg)
+            display: none
+
+    &__pic
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 60px
+        min-width: 60px
+        height: 60px
+        border-radius: 50%
+        background: var(--green-light)
+        color: var(--green-dark)
+
+    &--1
+
+        @media ($min-lg)
+            top: 20%
+            left: 3%
+
+            &:before
+                left: auto
+                right: 50px
+            
+            &:after
+                left: auto
+                right: 48px
+    
+    &--2
+
+        @media ($min-lg)
+            bottom: 10%
+            left: 25%
+
+            &:before
+                left: auto
+                right: 50px
+                bottom: 100%
+                top: auto
+            
+            &:after
+                left: auto
+                right: 48px
+                bottom: auto
+                top: -41px
+        
+    &--3
+
+        @media ($min-lg)
+            top: 20%
+            right: 3%
+    
+    &--4
+
+        @media ($min-lg)
+            bottom: 30%
+            right: 12%

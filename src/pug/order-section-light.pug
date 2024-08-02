@@ -1,0 +1,47 @@
+section.order-section.order-section--light
+    .container.order-section__container
+        .order-section__col.animation-left(data-delay=".2")
+            .order-section__content
+                h2.order-section__title Ми готові втілити 
+                    br
+                    svg.order-section__title-icon(width="52" height="54")
+                        use(xlink:href="img/sprite.svg#star")
+                    | ваші ідеї в реальність
+
+                p.order-section__text
+                    span Залиште заявку і ми зробимо дизайн-проект Вашого майданчику безкоштовно!
+
+        .order-section__col.animation-right(data-delay=".2")
+            form.form.form--dark.order-section__form(id="order-form-2" autocomplete="off" novalidate="novalidate")
+                .form__row
+                    .form__col.form__col--6
+                        .form__group
+                            input#inputName2.input.form__input(type="text" name="inputFirstName2" placeholder="" autocomplete="off" data-error-message="Введіть імʼя" required)
+                            label.form__placeholder Ім'я *
+                    
+                    .form__col.form__col--6
+                        .form__group
+                            input#inputLastName2.input.form__input(type="text" name="inputLastName2" placeholder="" autocomplete="off" data-error-message="Введіть прізвище" required)
+                            label.form__placeholder Прізвище *
+                
+                .form__group
+                    input#inputPhone2.input.form__input.phone-mask(type="text" name="inputPhone2" placeholder="" autocomplete="off" data-error-message="Введіть телефон" required)
+                    label.form__placeholder Номер телефону *
+
+                .form__group
+                    input#inputEmail2.input.form__input(type="text" name="inputEmail2" placeholder="" autocomplete="off")
+                    label.form__placeholder E-mail
+
+                .form__button-group
+                    button.button.button--green-dark.form__button Залишити заявку
+        
+            nav.social.social--dark.order-section__social
+                ul.social__list
+                    li.social__item
+                        a.social__link(href="#") Viber
+                    
+                    li.social__item
+                        a.social__link(href="#") Telegram
+                    
+                    li.social__item
+                        a.social__link(href="#") WhatsApp

@@ -1,0 +1,119 @@
+.category-card
+    position: relative
+    display: flex
+    width: 100%
+    color: var(--green-dark)
+    transition: color .5s ease
+
+    @media ($max-lg)
+        flex-direction: column
+        gap: 16px
+
+    &:hover,
+    &:active,
+    &:focus-visible
+        color: var(--green-light)
+
+        .category-card__img
+            scale: 1.2
+
+    @media ($min-lg)
+
+        &--1
+            
+            .category-card__title
+                position: absolute
+                top: 0
+                left: calc(100% + 20px)
+
+            .category-card__picture
+                width: 100%
+
+        &--2
+
+            .category-card__title
+                position: absolute
+                right: 55%
+                bottom: 0
+                text-align: right
+
+                &:before
+                    left: auto
+                    right: 0
+
+            .category-card__picture
+                margin-left:  auto
+                width: 50%
+
+        &--3
+
+            .category-card__title
+                position: absolute
+                left: calc(50% + 20px)
+                bottom: 0
+
+            .category-card__picture
+                margin-right:  auto
+                width: 50%
+        
+        &--4
+
+            .category-card__title
+                position: absolute
+                top: calc(100% + 20px)
+                left: 0
+
+            .category-card__picture
+                margin-right:  auto
+                width: 50%
+
+        &--5
+
+            .category-card__title
+                position: absolute
+                top: calc(100% + 20px)
+                right: 0
+                max-width: 100%
+
+            .category-card__picture
+                width: 100%
+
+    &__picture
+        display: flex
+        border-radius: 15px
+        overflow: hidden
+        isolation: isolate
+
+        @media ($max-lg)
+            height: 250px
+            width: 100%
+    
+    &__img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        // height: 100%
+        // width: auto
+        transition: scale 2.5s ease
+    
+    &__title
+        position: relative
+        font-size: 22px
+        font-weight: 500
+        max-width: 210px
+
+        @media ($max-xl)
+            font-size: 18px
+            max-width: 180px
+
+        @media ($max-lg)
+            word-break: break-word
+
+        &:before
+            position: absolute
+            top: calc(100% + 5px)
+            left: 0
+            width: 126px
+            height: 11px
+            background: url("data:image/svg+xml,%3Csvg width='126' height='11' viewBox='0 0 126 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M53.5045 1.61386C47.6544 1.93165 41.8729 2.32241 36.2351 2.7496C28.254 3.35392 20.2761 3.97909 12.3463 4.96893C9.85012 5.28151 7.31526 5.47946 4.83473 5.87019C3.27761 6.11504 1.2129 6.46404 0.941934 6.53698C0.800207 6.57866 0.738376 6.64123 0.718397 6.66207C0.577919 6.80794 0.603551 6.94854 0.682843 7.05795C0.714685 7.10484 0.795203 7.21949 1.01872 7.23512C15.9668 8.30311 31.2521 6.21924 46.2184 6.00043C72.1725 5.62534 98.9133 7.11531 124.661 10.3661C124.886 10.3922 125.105 10.2619 125.136 10.0692C125.173 9.88161 125.011 9.69926 124.786 9.67322C98.9945 6.41717 72.2099 4.92198 46.2059 5.30229C32.2579 5.50547 18.0347 7.3341 4.06741 6.70894C4.38832 6.65684 4.70301 6.60473 4.99021 6.55784C7.46075 6.16711 9.98498 5.97437 12.4711 5.66179C20.3841 4.67195 28.3458 4.04679 36.3162 3.44768C46.2059 2.69748 56.5263 2.05148 66.928 1.74932C70.6491 1.7962 74.3577 1.84311 78.0663 1.90042C86.0892 2.02545 94.1495 2.39013 102.154 2.87984C104.564 3.03092 106.974 3.1872 109.384 3.32265C110.183 3.36954 112.243 3.50497 112.53 3.49455C112.886 3.48413 112.955 3.23409 112.961 3.19241C112.98 3.09863 112.967 2.96838 112.793 2.85898C112.774 2.84335 112.661 2.79122 112.412 2.75996C97.8581 0.915739 82.3181 0.608416 66.9405 1.05124C50.7199 0.858481 34.4369 0.775088 18.2576 0.686523C18.026 0.686523 17.8368 0.842837 17.8349 1.03559C17.8337 1.22835 18.0203 1.38467 18.252 1.38988C29.9672 1.4524 41.7418 1.51488 53.5045 1.61386Z' fill='%23B6F61B'/%3E%3C/svg%3E%0A") no-repeat center center
+            content: ""

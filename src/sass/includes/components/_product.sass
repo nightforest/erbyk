@@ -1,0 +1,77 @@
+.product
+
+    &__title
+        margin-bottom: 12px
+        font-size: 40px
+        font-weight: 600
+        line-height: 1.5
+        text-transform: uppercase
+        color: var(--green-dark)
+
+        @media ($max-md)
+            font-size: 28px
+    
+    &__text
+        margin-bottom: 16px
+        font-size: 20px
+        font-weight: 500
+        overflow: hidden
+        text-overflow: ellipsis
+        display: -webkit-box
+        -webkit-line-clamp: 3
+        line-clamp: 3
+        -webkit-box-orient: vertical
+        color: var(--green-dark)
+
+        @media ($max-md)
+            font-size: 16px
+
+        &.is-visible
+            display: block
+            
+    &__more-button
+        font-size: 18px
+        font-weight: 600
+        color: var(--green-dark)
+        transition: color .5s ease
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            color: var(--green)
+    
+    &__hr
+        margin: 24px 0
+        border: none
+        height: 1px
+        background: var(--black)
+        box-sizing: border-box
+        padding: 0
+    
+    &__colors
+        margin-bottom: 30px
+    
+    &__table
+        display: flex
+        flex-direction: column
+        gap: 5px
+        font-size: 18px
+        margin-bottom: 30px
+        color: var(--green-dark)
+
+        @media ($max-md)
+            font-size: 16px
+
+        &-row
+            display: flex
+            gap: 30px
+        
+        &-col
+            font-weight: 300
+
+            &:first-child
+                font-weight: 700
+                min-width: 110px
+
+                @media ($max-md)
+                    min-width: 100px

@@ -1,0 +1,64 @@
+.header
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    padding: 30px 0
+    z-index: $z-index-3
+    transition: box-shadow .5s ease, padding .5s ease, background .5s ease
+
+    @media ($max-lg)
+        padding: 10px 0
+
+    &.is-scroll
+        background: var(--white)
+        box-shadow: 0 8px 15px 0 rgba(0, 0, 0, .1)
+        padding: 10px 0
+
+    &.is-active
+        background: var(--white)
+        box-shadow: 0 8px 15px 0 rgba(0, 0, 0, .1)
+
+    &__container
+        display: flex
+        align-items: center
+        gap: 30px
+
+        @media ($max-lg)
+            max-width: 100%
+            gap: 10px
+
+    &__logo
+
+        @media ($max-lg)
+            margin-right: auto
+            width: 64px
+            height: 64px
+
+        @media ($max-md)
+            width: 45px
+            height: 45px
+
+    &__menu
+        margin: 0 auto
+
+        @media ($max-lg)
+            display: none
+
+    &__nav-toggle
+
+        @media ($min-lg)
+            display: none
+
+    &__catalog-button
+
+        @media ($max-lg)
+            height: 45px
+            width: 45px
+            border-radius: 10px
+            padding: 0
+
+        span
+
+            @media ($max-xxl)
+                display: none

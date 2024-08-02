@@ -1,0 +1,33 @@
+.partners-slider
+    position: relative
+
+    @media ($max-lg)
+        padding-bottom: 110px
+
+    &__nav
+        position: absolute
+        bottom: 0
+        right: 0
+        width: calc(25% - 10px)
+        display: flex
+        gap: 15px
+
+        @media ($max-lg)
+            width: 100%
+            justify-content: center
+
+    &__prev,
+    &__next
+        width: 40px
+        height: 40px
+        padding: 5px
+        border-radius: 50%
+
+        @media ($max-lg)
+            width: 75px
+            height: 75px
+
+        &.swiper-button-disabled
+            opacity: 0
+            visibility: hidden
+

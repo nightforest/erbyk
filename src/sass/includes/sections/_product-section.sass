@@ -1,0 +1,28 @@
+.product-section
+    padding: 10px 0 100px
+
+    @media ($max-lg)
+        padding: 10px 0 50px
+
+    &__breadcrumbs
+        margin-bottom: 24px
+    
+    &__row
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        gap: 120px
+
+        @media ($max-xxl)
+            gap: 120px 40px
+        
+        @media ($max-lg)
+            display: flex
+            flex-direction: column
+            gap: 50px
+
+    &__col
+        grid-column: 6 span
+    
+    &__view-button
+        display: flex
+        margin: 0 auto

@@ -1,0 +1,58 @@
+header.header
+    .container.header__container
+        .logo.header__logo
+            a.logo__link(href="#" aria-label="logo")
+                img.logo__img(src="img/logo.svg" width="85" height="85" alt="logo")
+
+        nav.menu.header__menu
+            ul.menu__list
+                li.menu__item
+                    a.menu__link(href="#") Обладнання
+                
+                li.menu__item
+                    a.menu__link(href="#") Переваги
+                
+                li.menu__item
+                    a.menu__link(href="#") Проєкти
+                
+                li.menu__item
+                    a.menu__link(href="#") Контакти
+                
+                li.menu__item
+                    a.menu__link(href="#") FAQ
+
+        .lang.header__lang
+            button.lang__toggle(type="button" aria-label="Choose a language" data-toggle="lang-list" aria-expanded="false")
+                svg.lang__toggle-icon(width="32" height="33")
+                    use(xlink:href="img/sprite.svg#lang")
+
+            ul.lang__list#lang-list(aria-hidden="true")
+                li.lang__item
+                    a.lang__link(href="#") EN
+
+                li.lang__item
+                    a.lang__link(href="#") DE
+
+        .dropdown.header__dropdown
+            button.dropdown__toggle(type="button" data-toggle="dropdown-list" aria-expanded="false")
+                span Наші Бізнеси
+
+                svg.dropdown__toggle-icon(width="17" height="9")
+                    use(xlink:href="img/sprite.svg#dropdown-arrow")
+
+            ul.dropdown__list#dropdown-list(aria-hidden="true")
+                li.dropdown__item
+                    a.dropdown__link(href="https://wstec.co.uk/" target="_blank") Світ спортивних технологій
+
+                li.dropdown__item
+                    a.dropdown__link(href="https://www.thehub.com.ua" target="_blank") Рекрутингова агенція The HUB
+
+        a.button.header__catalog-button(href="#")
+            svg.button__icon(width="28" height="25")
+                use(xlink:href="img/sprite.svg#catalog")
+            span Каталог
+
+        button.burger.header__nav-toggle(type="button" aria-expanded="false" data-nav-toggle)
+            span.burger__line
+            span.burger__line
+            span.burger__line

@@ -1,0 +1,42 @@
+.projects-slider
+    position: relative
+    overflow: visible
+    padding-bottom: 65px
+    --swiper-scrollbar-sides-offset: 35%
+
+    @media ($max-md)
+        --swiper-scrollbar-sides-offset: 0px
+        padding-bottom: 40px
+
+    &__prev,
+    &__next
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        width: 110px
+        height: 110px
+        padding: 5px
+        border-radius: 50%
+
+        @media ($max-lg)
+            width: 45px
+            height: 45px
+
+        @media ($max-md)
+            display: none
+
+        &.swiper-button-disabled
+            opacity: 0
+            visibility: hidden
+
+        .button__icon
+
+            @media ($max-lg)
+                width: 20px
+                height: 20px
+
+    &__prev
+        left: 0
+    
+    &__next
+        right: 0

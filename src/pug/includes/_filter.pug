@@ -1,0 +1,117 @@
+.filter
+    .filter__sidebar
+        .filter__header
+            h2.filter__title Фільтр
+
+            svg.filter__icon(width="22" height="20")
+                use(xlink:href="img/sprite.svg#filter")
+
+            button.filter__close(type="button" aria-label="Close filter" data-filter-close)
+                svg.filter__close-icon(width="19" height="19")
+                    use(xlink:href="img/sprite.svg#close")
+
+        .filter__inner
+            .filter-block
+                button.filter-block__toggle(type="button" data-trigger="filter-block-1" aria-expanded="true") Категорії Обладнання
+                    svg.filter-block__toggle-icon(width="22" height="12")
+                        use(xlink:href="img/sprite.svg#dropdown-arrow")
+                
+                #filter-block-1.filter-block__body(aria-hidden="false")
+                    .filter-block__inner
+                        ul.filter-block__list
+                            li.filter-block__item
+                                .checkbox.filter-block__checkbox
+                                    input.checkbox__input#filterCheckbox-1(type="checkbox" name="filterCheckbox-1" value="true" checked)
+                                    label.checkbox__label(for="filterCheckbox-1") Категорії
+                            
+                            li.filter-block__item
+                                .checkbox.filter-block__checkbox
+                                    input.checkbox__input#filterCheckbox-2(type="checkbox" name="filterCheckbox-2" value="true")
+                                    label.checkbox__label(for="filterCheckbox-2") Категорії
+
+                            li.filter-block__item
+                                .checkbox.filter-block__checkbox
+                                    input.checkbox__input#filterCheckbox-3(type="checkbox" name="filterCheckbox-3" value="true")
+                                    label.checkbox__label(for="filterCheckbox-3") Категорії
+
+            .filter-block
+                button.filter-block__toggle(type="button" data-trigger="filter-block-2" aria-expanded="true") Колекція
+                    svg.filter-block__toggle-icon(width="22" height="12")
+                        use(xlink:href="img/sprite.svg#dropdown-arrow")
+                
+                #filter-block-2.filter-block__body(aria-hidden="false")
+                    .filter-block__inner
+                        ul.filter-block__list
+                            li.filter-block__item
+                                .checkbox.filter-block__checkbox
+                                    input.checkbox__input#filterCheckbox-21(type="checkbox" name="filterCheckbox-21" value="true" checked)
+                                    label.checkbox__label(for="filterCheckbox-21") Категорії
+                            
+                            li.filter-block__item
+                                .checkbox.filter-block__checkbox
+                                    input.checkbox__input#filterCheckbox-22(type="checkbox" name="filterCheckbox-22" value="true")
+                                    label.checkbox__label(for="filterCheckbox-22") Категорії
+
+                            li.filter-block__item
+                                .checkbox.filter-block__checkbox
+                                    input.checkbox__input#filterCheckbox-23(type="checkbox" name="filterCheckbox-23" value="true")
+                                    label.checkbox__label(for="filterCheckbox-23") Категорії
+                            
+                            li.filter-block__item
+                                .checkbox.filter-block__checkbox
+                                    input.checkbox__input#filterCheckbox-24(type="checkbox" name="filterCheckbox-24" value="true" checked)
+                                    label.checkbox__label(for="filterCheckbox-24") Категорії
+
+            .filter-block
+                button.filter-block__toggle(type="button" data-trigger="filter-block-3" aria-expanded="true") Вік
+                    svg.filter-block__toggle-icon(width="22" height="12")
+                        use(xlink:href="img/sprite.svg#dropdown-arrow")
+                
+                #filter-block-3.filter-block__body(aria-hidden="false")
+                    .filter-block__inner
+                        ul.filter-block__list
+                            li.filter-block__item
+                                .checkbox.filter-block__checkbox
+                                    input.checkbox__input#filterCheckbox-31(type="checkbox" name="filterCheckbox-31" value="true" checked)
+                                    label.checkbox__label(for="filterCheckbox-31") До 3-ох
+                            
+                            li.filter-block__item
+                                .checkbox.filter-block__checkbox
+                                    input.checkbox__input#filterCheckbox-32(type="checkbox" name="filterCheckbox-32" value="true")
+                                    label.checkbox__label(for="filterCheckbox-32") Від 3-ох до 10
+
+                            li.filter-block__item
+                                .checkbox.filter-block__checkbox
+                                    input.checkbox__input#filterCheckbox-33(type="checkbox" name="filterCheckbox-33" value="true")
+                                    label.checkbox__label(for="filterCheckbox-33") Від 10 до 17
+                            
+                            li.filter-block__item
+                                .checkbox.filter-block__checkbox
+                                    input.checkbox__input#filterCheckbox-34(type="checkbox" name="filterCheckbox-34" value="true")
+                                    label.checkbox__label(for="filterCheckbox-34") 17+
+
+            .filter-block
+                button.filter-block__toggle(type="button" data-trigger="filter-block-4" aria-expanded="false") Призначення
+                    svg.filter-block__toggle-icon(width="22" height="12")
+                        use(xlink:href="img/sprite.svg#dropdown-arrow")
+                
+                #filter-block-4.filter-block__body(aria-hidden="true")
+                    .filter-block__inner
+                        ul.filter-block__list
+                            li.filter-block__item
+                                .checkbox.filter-block__checkbox
+                                    input.checkbox__input#filterCheckbox-41(type="checkbox" name="filterCheckbox-41" value="true" checked)
+                                    label.checkbox__label(for="filterCheckbox-41") Категорії
+                            
+                            li.filter-block__item
+                                .checkbox.filter-block__checkbox
+                                    input.checkbox__input#filterCheckbox-42(type="checkbox" name="filterCheckbox-42" value="true")
+                                    label.checkbox__label(for="filterCheckbox-42") Категорії
+
+                            li.filter-block__item
+                                .checkbox.filter-block__checkbox
+                                    input.checkbox__input#filterCheckbox-43(type="checkbox" name="filterCheckbox-43" value="true")
+                                    label.checkbox__label(for="filterCheckbox-43") Категорії
+
+            .filter__buttons-group
+                button.button.button--green-dark.filter__button(type="button") Застосувати

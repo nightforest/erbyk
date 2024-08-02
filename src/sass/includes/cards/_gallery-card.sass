@@ -1,0 +1,29 @@
+.gallery-card
+    display: flex
+    width: 100%
+
+    @media ($max-sm)
+        height: 300px
+
+    &:hover,
+    &:active,
+    &:focus-visible
+
+        .gallery-card__img
+            transform: scale(1.1)  
+
+    &__picture
+        display: flex
+        width: 100%
+        border-radius: 20px
+        overflow: hidden
+        isolation: isolate
+    
+    &__img
+        width: 100%
+        height: auto
+        transition: transform 2.5s ease
+
+        @media ($max-sm)
+            height: 100%
+            object-fit: cover

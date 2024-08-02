@@ -1,0 +1,232 @@
+section.product-section
+    .container.product-section__container
+        nav.breadcrumbs.product-section__breadcrumbs.animation-fade(data-delay=".2" aria-label="breadcrumb")
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="#") Головна
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="#") Каталог
+                li.breadcrumbs__item(aria-current="page") Будиночок “дюймовочка”
+        
+        .product-section__row
+            .product-section__col.animation-left(data-delay=".2")
+                .swiper.product-slider
+                    .swiper-wrapper
+                        .swiper-slide.product-slider__slide
+                            a.product-slider__link(href="img/product-img@2x.webp" data-pswp-width="1320" data-pswp-height="990")
+                                picture.product-slider__picture
+                                    img.product-slider__img(src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="660" height="495" alt="alt")
+                        
+                        .swiper-slide.product-slider__slide
+                            a.product-slider__link(href="img/product-img@2x.webp" data-pswp-width="1320" data-pswp-height="990")
+                                picture.product-slider__picture
+                                    img.product-slider__img(src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="660" height="495" alt="alt")
+                        
+                        .swiper-slide.product-slider__slide
+                            a.product-slider__link(href="img/product-img@2x.webp" data-pswp-width="1320" data-pswp-height="990")
+                                picture.product-slider__picture
+                                    img.product-slider__img(src="img/product-img.webp" srcset="img/product-img@2x.webp 2x" loading="lazy" width="660" height="495" alt="alt")
+
+                    button.button.button--green-dark.product-slider__prev(type="button" aria-label="previous slide")
+                        svg.button__icon(width="20" height="20")
+                            use(xlink:href="img/sprite.svg#arrow-prev")
+
+                    button.button.button--green-dark.product-slider__next(type="button" aria-label="next slide")
+                        svg.button__icon(width="20" height="20")
+                            use(xlink:href="img/sprite.svg#arrow-next")
+
+                    .swiper-pagination.product-slider__pagination
+
+                button.button.product-section__view-button(type="button") Переглянути в 3Д
+
+            .product-section__col.animation-right(data-delay=".2")
+                .product.product-section__product
+                    h1.product__title Будиночок “дюймовочка”
+
+                    .product__text
+                        p Прозорі куби з відкритими мотузками, що звиваються всередині, розвивають дитячі м'язи та координацію. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eum maxime tenetur consequuntur labore esse quaerat ducimus consequatur quisquam doloremque nostrum repellendus cumque, quod itaque ut voluptatum corporis ratione nobis.
+                    
+                    button.product__more-button(type="button" data-load-more="Показати більше +" data-load-less="Згорнути -") Показати більше +
+
+                    hr.product__hr
+
+                    .colors.product__colors
+                        ul.colors__list
+                            li.colors__item
+                                input.colors__input#colors-radio-1(type="radio" name="colors-radio" value="brown" aria-label="Brown color" checked)
+                                label.colors__label(for="colors-radio-1" style="--color:#5C432F")
+
+                            li.colors__item
+                                input.colors__input#colors-radio-2(type="radio" name="colors-radio" aria-label="Grey color" value="grey")
+                                label.colors__label(for="colors-radio-2" style="--color:#C2C4C3")
+                            
+                            li.colors__item
+                                input.colors__input#colors-radio-3(type="radio" name="colors-radio" aria-label="Blue color" value="blue")
+                                label.colors__label(for="colors-radio-3" style="--color:#2A87BA")
+                            
+                            li.colors__item
+                                input.colors__input#colors-radio-4(type="radio" name="colors-radio" aria-label="Dark color" value="dark")
+                                label.colors__label(for="colors-radio-4" style="--color:#39393A")
+                            
+                            li.colors__item
+                                input.colors__input#colors-radio-5(type="radio" name="colors-radio" aria-label="Red color" value="red")
+                                label.colors__label(for="colors-radio-5" style="--color:#C54242")
+                    
+                    .product__table
+                        .product__table-row
+                            .product__table-col Категорія:
+                            .product__table-col playground equipment / activity towers
+
+                        .product__table-row
+                            .product__table-col Вік:
+                            .product__table-col 6+
+
+            .product-section__col.animation-left(data-delay=".2")
+                ul.tabs-nav.product-section__tabs-nav
+                    li.tabs-nav__item
+                        button.tabs-nav__button(type="button" id="tab-1" aria-selected="true" aria-controls="tabpanel-1" role="tab") Дані пристрою
+
+                    li.tabs-nav__item
+                        button.tabs-nav__button(type="button" id="tab-2" aria-selected="false" aria-controls="tabpanel-2" role="tab") Креслення
+                    
+                    li.tabs-nav__item
+                        button.tabs-nav__button(type="button" id="tab-3" aria-selected="false" aria-controls="tabpanel-3" role="tab") Завантажити
+
+                .tabs-content.product-section__tabs-content
+                    .tabs-panel(id="tabpanel-1" aria-hidden="false" aria-labelledby="tab-1" role="tabpanel")
+                        .data-table
+                            .data-table__row
+                                .data-table__col
+                                    svg.data-table__icon(width="26" height="24")
+                                        use(xlink:href="img/sprite.svg#store")
+                                    | Довжина
+                                .data-table__col 85
+                            
+                            .data-table__row
+                                .data-table__col
+                                    svg.data-table__icon(width="26" height="24")
+                                        use(xlink:href="img/sprite.svg#store")
+                                    | Ширина
+                                .data-table__col 85
+                            
+                            .data-table__row
+                                .data-table__col
+                                    svg.data-table__icon(width="26" height="24")
+                                        use(xlink:href="img/sprite.svg#store")
+                                    | Загальна висота
+                                .data-table__col 85
+                                
+                            .data-table__row
+                                .data-table__col
+                                    svg.data-table__icon(width="26" height="24")
+                                        use(xlink:href="img/sprite.svg#store")
+                                    | Максимальна вага користувача
+                                .data-table__col 85
+
+                            .data-table__row
+                                .data-table__col
+                                    svg.data-table__icon(width="26" height="24")
+                                        use(xlink:href="img/sprite.svg#store")
+                                    | Зона безпеки
+                                .data-table__col 85
+                            
+                            .data-table__row
+                                .data-table__col
+                                    svg.data-table__icon(width="26" height="24")
+                                        use(xlink:href="img/sprite.svg#store")
+                                    | Висота вільного падіння
+                                .data-table__col 85
+
+                            .data-table__row
+                                .data-table__col
+                                    svg.data-table__icon(width="26" height="24")
+                                        use(xlink:href="img/sprite.svg#store")
+                                    | Час збірки
+                                .data-table__col 85
+
+                    .tabs-panel(id="tabpanel-2" aria-hidden="true" aria-labelledby="tab-2" role="tabpanel")
+                        .product-section__drawing
+                            a.draw-card(href="img/draw@2x.webp" data-pswp-width="1240" data-pswp-height="878")
+                                picture.draw-card__picture
+                                    img.draw-card__img(src="img/draw.webp" srcset="img/draw@2x.webp 2x" loading="lazy" width="620" height="439" alt="alt")
+
+                    .tabs-panel(id="tabpanel-3" aria-hidden="true" aria-labelledby="tab-3" role="tabpanel")
+                        .data-table
+                            .data-table__row
+                                .data-table__col
+                                    svg.data-table__icon(width="20" height="25")
+                                        use(xlink:href="img/sprite.svg#file")
+                                    | Назва файлу
+
+                                .data-table__col
+                                    a.button(href="#")
+                                        svg.button__icon(width="24" height="24")
+                                            use(xlink:href="img/sprite.svg#download")
+
+                            .data-table__row
+                                .data-table__col
+                                    svg.data-table__icon(width="20" height="25")
+                                        use(xlink:href="img/sprite.svg#file")
+                                    | Назва файлу
+
+                                .data-table__col
+                                    a.button(href="#")
+                                        svg.button__icon(width="24" height="24")
+                                            use(xlink:href="img/sprite.svg#download")
+                            
+                            .data-table__row
+                                .data-table__col
+                                    svg.data-table__icon(width="20" height="25")
+                                        use(xlink:href="img/sprite.svg#file")
+                                    | Назва файлу
+
+                                .data-table__col
+                                    a.button(href="#")
+                                        svg.button__icon(width="24" height="24")
+                                            use(xlink:href="img/sprite.svg#download")
+            
+            .product-section__col.animation-right(data-delay=".2")
+                .order.product-section__order
+                    .order__content
+                        h2.order__title Ми готові втілити 
+                            br
+                            svg.order__title-icon(width="28" height="28")
+                                use(xlink:href="img/sprite.svg#star")
+                            | ваші ідеї в реальність
+
+                        p.order__text
+                            span Залиште заявку, і ми з вами зв'яжемося!
+
+                    form.form.order__form(id="order-form" autocomplete="off" novalidate="novalidate")
+                        .form__row
+                            .form__col.form__col--6
+                                .form__group
+                                    input#inputName.input.form__input(type="text" name="inputFirstName" placeholder="" autocomplete="off" data-error-message="Введіть імʼя" required)
+                                    label.form__placeholder Ім'я *
+                            
+                            .form__col.form__col--6
+                                .form__group
+                                    input#inputLastName.input.form__input(type="text" name="inputLastName" placeholder="" autocomplete="off" data-error-message="Введіть прізвище" required)
+                                    label.form__placeholder Прізвище *
+                        
+                        .form__group
+                            input#inputPhone.input.form__input.phone-mask(type="text" name="inputPhone" placeholder="" autocomplete="off" data-error-message="Введіть телефон" required)
+                            label.form__placeholder Номер телефону *
+
+                        .form__group
+                            input#inputEmail.input.form__input(type="text" name="inputEmail" placeholder="" autocomplete="off")
+                            label.form__placeholder E-mail
+
+                        .form__button-group
+                            button.button.form__button Залишити заявку
+                
+                    nav.social.order__social
+                        ul.social__list
+                            li.social__item
+                                a.social__link(href="#") Viber
+                            
+                            li.social__item
+                                a.social__link(href="#") Telegram
+                            
+                            li.social__item
+                                a.social__link(href="#") WhatsApp

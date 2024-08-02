@@ -1,0 +1,40 @@
+.breadcrumbs
+
+    &__list
+        padding-left: 0
+        list-style: none
+        margin: 0
+        font-size: 0
+
+    &__item
+        line-height: 1.5
+        position: relative
+        color: var(--green-dark)
+        display: inline
+        font-weight: 500
+        font-size: 20px
+
+        @media ($max-md)
+            font-size: 16px
+
+        &:after
+            margin: 0 7px
+            color: var(--green)
+            content: '|'
+
+        &:last-child
+            margin-right: 0
+
+            &:after
+                display: none
+
+    &__link
+        position: relative
+        color: var(--green)
+        display: inline
+        transition: color .5s ease
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            color: var(--green-light)

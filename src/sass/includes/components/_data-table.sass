@@ -1,0 +1,28 @@
+.data-table
+
+    &__row
+        display: flex
+        align-items: center
+        justify-content: space-between
+        gap: 10px
+        padding: 15px 0
+        border-bottom: 1px solid var(--black)
+
+        &:not(:last-child)
+            margin-bottom: 30px
+
+            @media ($max-md)
+                margin-bottom: 15px
+
+    &__col
+        display: flex
+        align-items: center
+        gap: 15px
+        font-size: 20px
+        font-weight: 500
+
+        @media ($max-md)
+            font-size: 18px
+    
+    &__icon
+        min-width: 26px

@@ -1,0 +1,69 @@
+.project-card
+
+    &__link
+        position: relative
+        display: flex
+        width: 100%
+
+        &:hover,
+        &:active,
+        &:focus-visible
+
+            .project-card__img
+                scale: 1.1
+
+            .project-card__arrow
+                translate: 10px -10px
+    
+    &__picture
+        display: flex
+        width: 100%
+        border-radius: 25px 25px 0 0
+        overflow: hidden
+
+        @media ($max-md)
+            height: 300px
+    
+    &__img
+        width: 100%
+        height: auto
+        transition: scale 2.5s ease
+
+        @media ($max-md)
+            height: 100%
+            object-fit: cover
+    
+    &__bottom
+        position: absolute
+        bottom: 0
+        left: 0
+        display: flex
+        align-items: center
+        justify-content: space-between
+        gap: 16px
+        width: 100%
+        padding: 30px
+        border-radius: 25px 25px 0 0
+        background: var(--green-light)
+        color: var(--black)
+        z-index: 1
+
+        @media ($max-md)
+            padding: 16px
+    
+    &__title
+        font-size: 26px
+        font-weight: 500
+
+        @media ($max-md)
+            font-size: 18px
+
+        @media ($max-xs)
+            font-size: 16px
+    
+    &__arrow
+        transition: translate .5s ease
+
+        @media ($max-md)
+            width: 18px
+            height: 18px

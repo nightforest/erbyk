@@ -1,0 +1,48 @@
+.partner-card
+    display: grid
+    grid-template-columns: 4fr 5fr 3fr
+    gap: 20px
+
+    @media ($max-lg)
+        display: flex
+        flex-direction: column
+
+    &__col
+
+        &:first-child
+            display: flex
+            align-items: center
+
+        &:nth-child(2)
+
+            @media ($max-lg)
+                order: -1
+
+    &__text
+        font-size: 24px
+        font-weight: 500
+        color: var(--green-dark)
+
+        @media ($max-lg)
+            font-size: 18px
+    
+    &__picture
+        display: flex
+        border-radius: 20px
+        overflow: hidden
+    
+    &__img
+        width: 100%
+        height: auto
+    
+    &__descr
+        margin-top: 16px
+        font-size: 30px
+        font-weight: 500
+        color: var(--green-dark)
+
+        @media ($max-xxl)
+            font-size: 24px
+
+        @media ($max-lg)
+            font-size: 18px

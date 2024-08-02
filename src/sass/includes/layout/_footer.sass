@@ -1,0 +1,114 @@
+.footer
+    position: relative
+    background: var(--green-dark)
+    padding: 50px 0
+
+    &__row
+        display: flex
+        align-items: center
+        justify-content: space-between
+        gap: 20px
+
+        @media ($max-md)
+            flex-direction: column
+
+        &:not(:last-child)
+            margin-bottom: 70px
+
+            @media ($max-md)
+                margin-bottom: 50px
+
+        &:first-child,
+        &:last-child
+
+            @media ($max-lg)
+                flex-direction: column
+
+        &--ai-top
+            align-items: flex-start
+
+            @media ($max-md)
+                align-items: center
+
+    &__logo
+        min-width: 196px
+        margin-bottom: 10px
+        color: var(--white)
+
+        @media ($max-md)
+            text-align: center
+            margin-bottom: 30px
+
+    &-menu
+        width: auto
+
+        &__list
+            margin: 0
+            padding: 0
+            list-style: none
+            column-width: 100px
+            column-count: 4
+            column-gap: 80px
+
+            @media ($max-xxl)
+                column-width: 20px
+
+            @media ($max-md)
+                column-count: 1
+                text-align: center
+
+        &__item
+            margin-bottom: 10px
+        
+        &__link
+            font-size: 22px
+            font-weight: 300
+            color: var(--white)
+            transition: color .5s ease
+
+            @media ($max-xxl)
+                font-size: 18px
+
+            &:hover,
+            &:active,
+            &:focus-visible
+                color: var(--green-light)
+    
+    &__link
+        font-size: 22px
+        font-weight: 300
+        color: var(--white)
+        transition: color .5s ease
+
+        @media ($max-xxl)
+            font-size: 18px
+
+        @media ($max-lg)
+            order: 2
+            text-align: center
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            color: var(--green-light)
+    
+    &__certification-list
+
+        @media ($max-lg)
+            order: 1
+
+    &__copyright
+        font-size: 22px
+        font-weight: 300
+        color: var(--white)
+
+        @media ($max-xxl)
+            font-size: 18px
+
+        @media ($max-lg)
+            order: 3
+
+    &__contacts
+        
+        @media ($max-md)
+            text-align: center

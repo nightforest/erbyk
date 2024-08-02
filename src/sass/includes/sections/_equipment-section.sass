@@ -1,0 +1,60 @@
+.equipment-section
+    position: relative
+
+    &__inner
+        position: relative
+        max-width: 1440px
+        margin: 0 auto
+
+        &:before
+            position: absolute
+            top: 0
+            left: 50%
+            width: 700px
+            height: 320px
+            translate: -50% 0
+            background: url("data:image/svg+xml,%3Csvg width='700' height='320' viewBox='0 0 700 320' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M175 160C175 71.6344 96.6498 0 0 0H350H700C603.35 0 525 71.6344 525 160C525 248.366 446.65 320 350 320C253.35 320 175 248.366 175 160Z' fill='white'/%3E%3C/svg%3E%0A") no-repeat top center
+            content: ""
+
+            @media ($max-xl)
+                width: 480px
+                background-size: contain
+            
+            @media ($max-md)
+                width: 400px
+    
+    &__bg
+        display: flex
+        border-radius: 50px
+        overflow: hidden
+
+        @media ($max-lg)
+            height: 670px
+            border-radius: 0
+
+        &-img
+            max-width: 100%
+            height: auto
+
+            @media ($max-lg)
+                width: 100%
+                height: 100%
+                object-fit: cover
+
+    &__title
+        position: absolute
+        top: -20px
+        left: 50%
+        translate: -50% 0
+        border-radius: 50%
+    
+    &__items
+        
+        @media ($max-lg)
+            position: absolute
+            bottom: 40px
+            left: 24px
+            right: 24px
+            display: flex
+            flex-direction: column
+            gap: 24px

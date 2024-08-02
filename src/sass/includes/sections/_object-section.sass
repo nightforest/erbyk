@@ -1,0 +1,34 @@
+.object-section
+    padding: 20px 0 100px
+
+    @media ($max-lg)
+        padding: 20px 0 40px
+
+    &__container
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 20px
+
+        @media ($max-lg)
+            display: flex
+            flex-direction: column
+            gap: 40px
+    
+    &__header
+        margin-top: 40px
+
+        @media ($max-lg)
+            margin-top: 0
+
+    &__title-wrap
+        justify-content: flex-start
+        margin-bottom: 24px
+    
+    &__text
+        font-size: 18px
+        font-weight: 500
+        max-width: 550px
+        color: #999
+
+        @media ($max-lg)
+            max-width: 100%
